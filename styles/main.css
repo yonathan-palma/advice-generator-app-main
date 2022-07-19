@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@500;800&display=swap');
+
+:root{
+    --LightCyan: hsl(193, 38%, 86%);
+    --NeonGreen: hsl(150, 100%, 66%);
+    --GrayishBlue: hsl(217, 19%, 38%);
+    --DarkGrayishBlue: hsl(217, 19%, 24%);
+    --DarkBlue: hsl(218, 23%, 16%);
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Manrope', sans-serif;
+    background-color: var(--DarkBlue);
+}
+.container{
+    display: grid;
+    place-items: center;
+    width: 100%;
+    height: 100vh;
+}
+.card_template{
+    width: 90%;
+    max-width: 480px;
+    background-color: var(--DarkGrayishBlue);
+    border-radius: 12px;
+    padding: 2rem;
+    box-sizing: border-box;
+    display: grid;
+    gap: 1rem;
+    text-align: center;
+    -webkit-box-shadow: 1px 1px 20px 0px rgba(0,0,0,0.5); 
+    box-shadow: 1px 1px 20px 0px rgba(0,0,0,0.5);
+    position: relative;
+}
+
+.card_template .card_tittle h1{
+    color: var(--NeonGreen);
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 2px;
+}
+.card_template .card_body {
+    color: var(--LightCyan);
+    font-size: 28px;
+    font-weight: 800;
+}
+.card_template .card_footer {
+    margin: .6rem 0 1.5rem 0;
+    background-image: url(../images/pattern-divider-desktop.svg);
+    height: 30px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.card_template .card_footer .pause{
+    display: grid;
+}
+.line_left, .line_right{
+    background-color: var(--LightCyan);
+    height: 1px;
+    width: 100%;
+}
+.pause{
+    color: var(--LightCyan);
+}
+.icon{
+    background-color: var(--NeonGreen);
+    padding: 1rem;
+    border-radius: 50%;
+    display: grid;
+    cursor: pointer;
+    position: absolute;
+    align-self: flex-end;
+    justify-self: center;
+    margin-bottom: -28px;
+}
+.icon:hover{
+    box-shadow: 0px 0px 50px 5px rgba(82,255,180,.5);
+-webkit-box-shadow: 0px 0px 50px 5px rgba(82,255,180,.5);
+-moz-box-shadow: 0px 0px 50px 5px rgba(82,255,180,.5);
+}
