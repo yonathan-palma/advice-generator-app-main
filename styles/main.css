@@ -75,9 +75,15 @@ body{
     align-self: flex-end;
     justify-self: center;
     margin-bottom: -28px;
+    border: none;
 }
 .icon:hover{
     box-shadow: 0px 0px 50px 5px rgba(82,255,180,.5);
--webkit-box-shadow: 0px 0px 50px 5px rgba(82,255,180,.5);
--moz-box-shadow: 0px 0px 50px 5px rgba(82,255,180,.5);
+    -webkit-box-shadow: 0px 0px 50px 5px rgba(82,255,180,.5);
+    -moz-box-shadow: 0px 0px 50px 5px rgba(82,255,180,.5);
+}
+@media (max-width:428px) {
+    .card_template .card_footer {
+        background-image: url(../images/pattern-divider-mobile.svg);
+    }
 }
