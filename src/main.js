@@ -1,4 +1,5 @@
 import advice_search from "./utils/getData.js";
+import './styles/main.css';
 
 const API = "https://api.adviceslip.com/advice";
 const icon_advice = document.getElementById("icon_advice");
