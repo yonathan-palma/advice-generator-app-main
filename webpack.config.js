@@ -1,8 +1,10 @@
 const path = require("path");
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const Dotenv = require('dotenv-webpack');//para varibles de entorno
 
 module.exports = {
+    mode: 'production',
     entry: path.resolve(__dirname, './src/main.js'),
     output:{
         assetModuleFilename: "assets/images/[contenthash][ext][query]",
@@ -45,5 +47,6 @@ module.exports = {
         new MiniCssExtractPlugin({
             filename: 'assets/css/[name].[contenthash].css'
         }),
-    ]
+        new Dotenv(),
+    ],
 }

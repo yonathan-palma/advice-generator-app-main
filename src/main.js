@@ -1,7 +1,7 @@
 import advice_search from "./utils/getData.js";
 import './styles/main.css';
 
-const API = "https://api.adviceslip.com/advice";
+const API = process.env.API;
 const icon_advice = document.getElementById("icon_advice");
 const parrafo = document.querySelector("#card_body p");
 const titleId = document.getElementById("id_advice");
