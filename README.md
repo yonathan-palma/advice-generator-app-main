@@ -19,7 +19,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [https://github.com/yonathan-palma/advice-generator-app-main.git](https://github.com/yonathan-palma/advice-generator-app-main.git)
-- Live Site URL: [https://yonathan-palma.github.io/advice-generator-app-main/](https://yonathan-palma.github.io/advice-generator-app-main/)
+- Live Site URL: [https://main--snazzy-malabi-565661.netlify.app/](https://main--snazzy-malabi-565661.netlify.app/)
 
 ## My process
 
