@@ -2,6 +2,7 @@ const path = require("path");
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const Dotenv = require('dotenv-webpack');//para varibles de entorno
+const CopyPlugin = require('copy-webpack-plugin');
 
 module.exports = {
     mode: 'production',
@@ -48,5 +49,13 @@ module.exports = {
             filename: 'assets/css/[name].[contenthash].css'
         }),
         new Dotenv(),
+        new CopyPlugin({
+            patterns:[
+                {
+                    from:path.resolve(__dirname, "src", "images"),
+                    to: "assets/images"
+                }
+            ]
+        }),
     ],
 }
