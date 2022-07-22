@@ -7,7 +7,7 @@ module.exports = {
     mode: 'production',
     entry: path.resolve(__dirname, './src/main.js'),
     output:{
-        assetModuleFilename: "assets/images/[contenthash][ext][query]",
+        assetModuleFilename: "assets/images/[name][ext]",
         clean: true,
     },
 
